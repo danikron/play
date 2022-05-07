@@ -149,7 +149,7 @@ fi
 
 # First refined selection step
 if [[ $MOVIEDIRS && $SERIESDIRS ]]; then
-	OPTIONS=("Movie" "Series")
+	OPTIONS=("Movies" "Series")
 	REPLY=$(eval "echo \"${OPTIONS[*]}\" | $ROFI")
 
 	if [[ $REPLY = "Movie" ]]; then
